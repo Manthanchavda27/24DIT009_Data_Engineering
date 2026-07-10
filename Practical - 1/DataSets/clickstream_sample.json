@@ -1,0 +1,31 @@
+
+[
+  {
+    "user_id": 101,
+    "session_id": "S001",
+    "event": "page_view",
+    "page": "/electronics",
+    "timestamp": "2026-07-10T10:15:00Z"
+  },
+  {
+    "user_id": 101,
+    "session_id": "S001",
+    "event": "view_product",
+    "product_id": 5001,
+    "timestamp": "2026-07-10T10:16:15Z"
+  },
+  {
+    "user_id": 101,
+    "session_id": "S001",
+    "event": "add_to_cart",
+    "product_id": 5001,
+    "timestamp": "2026-07-10T10:17:20Z"
+  },
+  {
+    "user_id": 101,
+    "session_id": "S001",
+    "event": "checkout",
+    "order_id": 9001,
+    "timestamp": "2026-07-10T10:20:42Z"
+  }
+]
