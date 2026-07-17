@@ -1,0 +1,4 @@
+DATABASE=SQLite
+API_URL=https://example.com/api
+MAX_RECORDS=100
+LOG_LEVEL=INFO
