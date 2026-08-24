@@ -1,0 +1,11 @@
+batch,records,avg_response_time_ms,avg_cpu_percent,avg_memory_percent,error_count,processing_time_ms
+batch_0.csv,100,564.7,52.62,55.86,21,39.37
+batch_1.csv,100,515.25,53.38,56.26,13,6.06
+batch_2.csv,100,472.83,51.97,56.92,20,5.56
+batch_3.csv,100,523.1,52.62,57.52,27,6.87
+batch_4.csv,100,465.05,52.22,55.54,24,5.91
+batch_5.csv,100,510.9,54.69,54.14,21,13.12
+batch_6.csv,100,575.87,54.8,56.64,13,8.52
+batch_7.csv,100,538.9,55.17,51.83,22,6.4
+batch_8.csv,100,546.43,51.06,53.99,15,7.28
+batch_9.csv,100,557.7,52.36,55.57,12,4.78
