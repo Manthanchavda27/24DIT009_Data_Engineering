@@ -1,0 +1,11 @@
+object_key,created_date,size_gb,retention_days
+logs/app-logs-hot-001.json,2026-10-07,0.4,365
+logs/api-events-hot-002.json,2026-10-04,0.8,365
+logs/metrics-warm-003.json,2026-09-19,1.5,365
+logs/audit-warm-004.json,2026-08-25,0.7,730
+logs/archive-cold-005.json,2026-05-12,4.2,1095
+logs/legacy-cold-006.json,2025-12-13,2.1,1095
+logs/rarely-read-007.json,2026-07-11,0.9,365
+logs/frequent-old-008.json,2026-03-23,1.8,730
+logs/retention-expired-009.json,2025-05-27,0.3,365
+logs/new-upload-010.json,2026-10-09,0.2,365

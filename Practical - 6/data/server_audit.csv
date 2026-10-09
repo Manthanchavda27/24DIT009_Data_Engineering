@@ -1,0 +1,11 @@
+timestamp,object_key,action,actor,result
+2026-10-07T12:00:00,logs/app-logs-hot-001.json,READ,demo-service,SUCCESS
+2026-10-04T12:00:00,logs/api-events-hot-002.json,READ,demo-service,SUCCESS
+2026-09-19T12:00:00,logs/metrics-warm-003.json,READ,demo-service,SUCCESS
+2026-09-09T12:00:00,logs/audit-warm-004.json,READ,demo-service,SUCCESS
+2026-09-09T12:00:00,logs/archive-cold-005.json,WRITE,demo-service,SUCCESS
+2026-09-09T12:00:00,logs/legacy-cold-006.json,WRITE,demo-service,SUCCESS
+2026-09-09T12:00:00,logs/rarely-read-007.json,READ,demo-service,SUCCESS
+2026-09-09T12:00:00,logs/frequent-old-008.json,READ,demo-service,SUCCESS
+2026-09-09T12:00:00,logs/retention-expired-009.json,WRITE,demo-service,SUCCESS
+2026-10-09T12:00:00,logs/new-upload-010.json,WRITE,demo-service,SUCCESS

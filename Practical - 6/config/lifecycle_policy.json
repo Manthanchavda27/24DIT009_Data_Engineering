@@ -1,0 +1,22 @@
+{
+  "policy_name": "Practical 6 Storage Lifecycle Policy",
+  "as_of_date": "2026-10-09",
+  "hot": {
+    "recent_access_days": 7,
+    "minimum_accesses_in_30_days": 10,
+    "illustrative_cost_per_gb_month": 0.12
+  },
+  "warm": {
+    "recent_access_days": 30,
+    "illustrative_cost_per_gb_month": 0.07
+  },
+  "cold": {
+    "minimum_days_since_access": 30,
+    "illustrative_cost_per_gb_month": 0.025
+  },
+  "retention": {
+    "default_retention_days": 365,
+    "mark_expired_candidates_only": true
+  },
+  "notes": "Educational simulation only; rates are illustrative, not vendor prices."
+}
