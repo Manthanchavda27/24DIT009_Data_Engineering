@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+data/*.csv
+data/unpartitioned/
+data/partitioned/
+output/*
+!output/.gitkeep
+.env
+.DS_Store

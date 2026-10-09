@@ -1,0 +1,16 @@
+
+services:
+  minio:
+    image: soldevelo/minio:latest
+    container_name: practical5-minio
+    ports:
+      - "9000:9000"
+    environment:
+      MINIO_ROOT_USER: minioadmin
+      MINIO_ROOT_PASSWORD: minioadmin
+      MINIO_DEFAULT_BUCKETS: practical5-metrics
+    volumes:
+      - minio_data:/data
+
+volumes:
+  minio_data:
