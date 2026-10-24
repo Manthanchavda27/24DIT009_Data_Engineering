@@ -1,0 +1,29 @@
+\n## Revenue by region\nSQL:\nSELECT c.region, ROUND(SUM(f.sales_amount), 2) AS revenue
+            FROM fact_sales f JOIN dim_customer c USING (customer_key)
+            GROUP BY c.region ORDER BY revenue DESC\n\nResult:\n    region   revenue
+Saurashtra 8843750.0
+     South 7025000.0
+     North 5231250.0
+   Central 5181250.0\n\n\n## Monthly revenue\nSQL:\nSELECT d.year, d.month, d.month_name, ROUND(SUM(f.sales_amount), 2) AS revenue
+            FROM fact_sales f JOIN dim_date d USING (date_key)
+            GROUP BY d.year, d.month, d.month_name ORDER BY d.year, d.month\n\nResult:\n year  month month_name   revenue
+ 2025      1    January 5181250.0
+ 2025      2   February 5231250.0
+ 2025      3      March 7025000.0
+ 2025      4      April 8843750.0\n\n\n## Top 5 products\nSQL:\nSELECT p.product_name, ROUND(SUM(f.sales_amount), 2) AS revenue
+            FROM fact_sales f JOIN dim_product p USING (product_key)
+            GROUP BY p.product_name ORDER BY revenue DESC LIMIT 5\n\nResult:\nproduct_name  revenue
+ Product 100 590625.0
+  Product 95 575000.0
+  Product 90 559375.0
+  Product 85 543750.0
+  Product 80 528125.0\n\n\n## Snowflake-style category revenue\nSQL:\nSELECT cat.category_name, ROUND(SUM(f.sales_amount), 2) AS revenue
+            FROM fact_sales f
+            JOIN dim_product p USING (product_key)
+            JOIN dim_category cat ON cat.category_name = p.category
+            GROUP BY cat.category_name ORDER BY revenue DESC\n\nResult:\ncategory_name   revenue
+       Sports 8843750.0
+         Home 7025000.0
+     Clothing 5231250.0
+      Grocery 3462500.0
+  Electronics 1718750.0\n

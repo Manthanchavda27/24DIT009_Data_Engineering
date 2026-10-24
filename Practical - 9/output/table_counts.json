@@ -1,0 +1,8 @@
+{
+  "raw_sales": 50000,
+  "dim_customer": 500,
+  "dim_product": 100,
+  "dim_date": 5,
+  "fact_sales": 50000,
+  "dim_category": 5
+}

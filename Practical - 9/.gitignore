@@ -1,0 +1,1 @@
+.venv/\n__pycache__/\ndata/*.duckdb\noutput/*.json\noutput/*.txt\n!output/.gitkeep\n
